@@ -1,0 +1,102 @@
+body {
+  font-family: "San Francisco";
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 1.6em;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+/* Edit nav bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  }
+
+/* Add a background color to the top navigation */
+.topnav {
+background-color: pink;
+overflow: hidden;
+margin-top: 0;
+}
+
+/* Style the links inside the nav bar */
+.topnav a {
+  color: black;
+  text-align: right;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 40px;
+  text-transform: lowercase;
+}
+
+/* Change the color of navbar links on hover */
+.topnav a:hover {
+  color: black;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/* Position nav bar */
+.topnav-right {
+  float: right;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+
+
+/* Edit 90's heading */
+h1 {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+/* Edit rocko's modern life title doesnt work */
+
+
+/* Edit why/fav columns */
+.col-sm-4 {  
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: pink;
+  padding: 50px;
+  font-size: 15px;
+   display: flex;
+      justify-content: space-between;
+}
+
+h3 {
+ text-align: center;
+}
+
+.gallery {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-container {
+  display: inline-block;
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
