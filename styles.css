@@ -3,46 +3,56 @@ body {
   font-style: normal;
   letter-spacing: 0em;
   line-height: 1.6em;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 40px;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+  
+}
+
+/* Position HZL logo */
+.logo {
+float: left;
+padding: 20px 20px;
+}
+
+/* Edit 90's heading */
+h1 {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 10px;
+
 }
 
 /* Edit nav bar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  }
+display: flex;
+justify-content: space-between;
+}
 
-/* Add a background color to the top navigation */
+/* Edit topnav & add background color */
 .topnav {
-background-color: pink;
+background-color: white;
 overflow: hidden;
 margin-top: 0;
 }
 
-/* Style the links inside the nav bar */
+/* Style the links inside the topnav */
 .topnav a {
-  color: black;
-  text-align: right;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 40px;
-  text-transform: lowercase;
+color: black;
+float: right;
+padding: 30px 30px;
+text-decoration: none;
+font-size: 40px;
+text-transform: lowercase;
 }
 
-/* Change the color of navbar links on hover */
+/* Change the color of topnav links on hover */
 .topnav a:hover {
   color: black;
   font-weight: bold;
   font-size: 60px;
-}
-
-/* Position nav bar */
-.topnav-right {
-  float: right;
 }
 
 .topnav a.active {
@@ -50,53 +60,72 @@ margin-top: 0;
   color: black;
 }
 
-
-
-/* Edit 90's heading */
-h1 {
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  
-}
-
-/* Edit rocko's modern life title doesnt work */
-
-
-/* Edit why/fav columns */
-.col-sm-4 {  
-    text-transform: lowercase;
-    text-align: center;
-}
-
-/* Add a background color and some padding around the form */
+/* main container*/
 .container {
-  border-radius: 5px;
-  background-color: pink;
-  padding: 50px;
-  font-size: 15px;
-   display: flex;
-      justify-content: space-between;
+border-radius: 5px;
+background-color: white;
+font-size: 15px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+padding: 30px 30px;
+text-transform: lowercase;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-column-gap: 10px; /* Adjust the spacing value as needed */
 }
 
-h3 {
- text-align: center;
+
+
+/* rockos modern life 1993 title */
+.custom-link {
+text-decoration: none; /* remove underline */
+color: black; /* change link color */
+font-size: 40px;
 }
 
-.gallery {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
+/* edit rockos modern life 1993 title text */
+.custom-l {
+font-size: 15px;
+text-decoration: none;
+color: black;
 }
 
+/* rocko logo */
 .image-container {
-  display: inline-block;
-  width: 200px; /* Adjust width as needed */
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  }
+
+/* edit horizontal gallery */
+.marquee-container {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
+.marquee-container img {
+  display: inline-block;
+  margin-right: 10px; /* Adjust this value to set the space between images */
+  animation: marquee 10s linear infinite; /* Adjust this value to set the speed of the animation */
+  padding: 10px 10px;
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.footer {
+overflow: hidden;
+}
+
+/* 4 seasons 52 eps */
+h4 {
+  padding: 10px 10px;
+}
+
+.col-sm-4 {
+ padding: 50px 20px; 
+}
+
