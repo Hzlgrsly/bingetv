@@ -7,7 +7,7 @@ body {
   margin-top: 40px;
   margin-right: 200px;
   margin-left: 200px;
-  
+  text-transform: lowercase;
 }
 
 /* Position HZL logo */
@@ -20,10 +20,8 @@ padding: 20px 20px;
 h1 {
   color: black;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 10px 10px;
-
-}
+  }
 
 /* Edit nav bar */
 .navbar {
@@ -33,7 +31,7 @@ justify-content: space-between;
 
 /* Edit topnav & add background color */
 .topnav {
-background-color: white;
+background-color: #white;
 overflow: hidden;
 margin-top: 0;
 }
@@ -42,10 +40,12 @@ margin-top: 0;
 .topnav a {
 color: black;
 float: right;
+font-weight: bold;
 padding: 30px 30px;
 text-decoration: none;
 font-size: 40px;
 text-transform: lowercase;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Change the color of topnav links on hover */
@@ -63,19 +63,20 @@ text-transform: lowercase;
 /* main container*/
 .container {
 border-radius: 5px;
-background-color: white;
+border: 1px solid #e1e6e8; /* with or without*/
+margin-top: 15px;
+margin-bottom: 15px;
+background-color: #f9fbfc;
 font-size: 15px;
 display: flex;
 justify-content: space-between;
 text-align: center;
-padding: 30px 30px;
+padding: 15px 15px;
 text-transform: lowercase;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-column-gap: 10px; /* Adjust the spacing value as needed */
 }
-
-
 
 /* rockos modern life 1993 title */
 .custom-link {
@@ -95,21 +96,22 @@ color: black;
 .image-container {
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 10px 10px;
   }
-
+  
 /* edit horizontal gallery */
 .marquee-container {
   white-space: nowrap;
   overflow: hidden;
-}
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
 
 .marquee-container img {
   display: inline-block;
-  margin-right: 10px; /* Adjust this value to set the space between images */
+  margin-right: 1px; /* Adjust this value to set the space between images */
   animation: marquee 10s linear infinite; /* Adjust this value to set the speed of the animation */
   padding: 10px 10px;
-}
+      }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -117,15 +119,5 @@ color: black;
 }
 
 .footer {
-overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-
-/* 4 seasons 52 eps */
-h4 {
-  padding: 10px 10px;
-}
-
-.col-sm-4 {
- padding: 50px 20px; 
-}
-
